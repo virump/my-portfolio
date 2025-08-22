@@ -377,7 +377,7 @@
   margin-left: -108px;
 }  
 
-@media screen and (max-width:400px) {
+@media screen and (max-width:450px) {
   /* Show toggle button */
   .toggle {
     display: block;
@@ -462,20 +462,19 @@
     border-radius: 20px;
   }
   .profile-image h1 {
-    margin-left: 143px;
-    font-size: 2rem;
-    margin-top: -384px;
-
+     margin-left: 166px;
+     font-size: 2rem;
+     margin-top: -409px;
   }
   .profile-image h2 {
-    margin-left: 130px;
-    font-size: 3rem;
-    margin-top: -18px;
+     margin-left: 153px;
+     font-size: 3rem;
+     margin-top: -18px;;
   }
   .profile-image h3 {
-    margin-left: 86px;
+    margin-left: 103px;
     font-size: 2.5rem;
-    margin-top: 279px;
+    margin-top: 307px;
   }
   .container {
     margin-left: 30px;
