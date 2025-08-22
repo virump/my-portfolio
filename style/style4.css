@@ -14,9 +14,9 @@
     justify-content: space-around;
     align-items: center;
     height: 58px;
-    background: black;
-  margin: 18px 31.4%;
-  border-radius: 69px;
+    background: black;     
+    margin: 18px 31.4%;
+    border-radius: 69px;
   }
   nav ul {
     display: flex;
