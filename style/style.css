@@ -427,13 +427,12 @@
   nav .right ul.show {
     display: flex;
     background: rgba(15, 15, 15, .9);
-    margin-right: 41px;
-    margin-top: -43px;
+    margin: -43px 18%;
     width: 250px;
     align-items: center;
     border-radius: 20px;
     height: 350px;
-    gap: 30px;
+    justify-content: space-around;
   }
 
   nav .right ul li a {
