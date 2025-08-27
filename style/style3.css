@@ -494,3 +494,214 @@
   background-color: rgb(208, 255, 113);
   transition: background-color 0.3s ease;
 }
+
+.footer-container p:nth-of-type(2) {
+  margin-top: -70px;
+  margin-left: 749px;
+  font-size: 21px;
+}
+.toggle {
+  display: none;
+  background: #444;
+  color: white;
+  padding: 8px 12px;
+  border: none;
+  cursor: pointer;
+}
+.right p {
+  display: none;
+  background: #444;
+  color: rgb(255, 255, 255);
+  padding: 8px 12px;
+  border: none;;
+}
+
+@media screen and (max-width:450px) {
+  :root { --pad: 16px; }
+
+  nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 56px;
+    background: black;
+    margin: 18px 15.5%;
+    border-radius: 69px;
+    width: 260px;
+  }
+  
+  /* Hide menu by default */
+  nav .right ul {
+    display: none;
+    flex-direction: column;
+    background: #333;
+    padding: 10px;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    border-radius: 6px;
+  }
+
+  /* Show when toggle is clicked */
+  nav .right ul.show {
+    display: flex;
+    background: rgba(15, 15, 15, .9);
+    margin: -43px 18%;
+    width: 250px;
+    align-items: center;
+    border-radius: 20px;
+    height: 350px;
+    justify-content: space-around;
+  }
+
+  nav .right ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 0;
+  }
+  .avatar{
+    position: relative;
+    display: flex;
+    height: 40px;
+    width: 40px;
+    overflow: hidden;
+    border-radius: 50%;
+    transition: all 0.3s ease-in-out;
+    align-items: center;
+    justify-content: center;
+    background: whitesmoke;
+    margin-left: -4px;
+    margin-right: -62px;
+  }
+  .right p {
+      display: inline-block;
+      padding-left: 0px;
+      padding-right: 0px;
+      margin-left: 43px;
+      background: black;
+      color: whitesmoke;
+  }
+  .toggle {
+    display: block;
+    background: rgb(208, 255, 113);
+    color: black;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+    font-size: 1.2rem;
+    border-radius: 69px;
+    margin-left: 192px;
+    margin-top: -42px;
+    margin-right: -5px;
+  }
+
+
+  /* VIDEO + SWITCH */
+  .bg-video { opacity: .15; }
+  .liquid-3 {
+    top: auto !important;
+    bottom: 20px !important;
+    left: 50% !important;
+    transform: translateX(-50%) !important;
+    width: 3.3em !important;
+  }
+
+  /* CAROUSEL */
+  .carousel-section {
+    min-height: auto;
+    padding: 10px 0 56px;
+  }
+  .carousel-wrapper {
+    max-width: 100%;
+    height: 420px;
+    margin: 0 auto;
+    overflow: visible;
+  }
+  .carousel-container {
+     margin-top: 45px; 
+     align-items: stretch; 
+    }
+
+  .card {
+    width: 88vw;
+    height: 420px;
+    border-radius: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .card-img { height: 160px; }
+
+  /* keep neighbors subtle but not off-screen */
+  .card.next, .card.prev {
+    opacity: .85;
+    transform: translateX(-50%) scale(.96);
+  }
+  .card.active {
+    transform: translateX(-50%) scale(1);
+  }
+
+  .carousel-btn {
+    top: calc(50% - 10px);
+    padding: 8px 11px;
+    font-size: 1.4rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,.25);
+  }
+  .prev-btn { left: 6px; }
+  .next-btn { right: 6px; }
+
+  .dots {
+    bottom: 6px;
+    gap: 8px;
+  }
+  .dot { width: 8px; height: 8px; }
+
+  /* RESUME BUTTON */
+  .resume {
+    margin-bottom: 40px;
+  }
+  .resume button {
+    width: calc(100% - 2*var(--pad));
+    margin: 16px var(--pad) 0;
+    height: 48px;
+    font-size: 1.1rem;
+  }
+
+  /* FOOTER */
+    .footer-container {
+    text-align: center;
+    padding: 20px 10px;
+    margin: 0;
+    height: auto;
+  }
+
+  .footer-container p {
+    margin: 5px 0;
+    font-size: 1rem;
+  }
+
+  .footer-logo {
+    margin: 10px 0;
+  }
+
+  .footer-logo img {
+    margin: 0 auto;
+    display: block;
+    padding-bottom: 10px;
+    margin-left: 142px;
+    margin-top: 0px;
+    margin-bottom: 52px;
+  }
+  
+  .footer-container p:nth-of-type(1) {
+   margin-left: -125px;
+   margin-top: 6px;
+   margin-bottom: -44px;
+  }
+
+  .footer-container p:nth-of-type(2) {
+    font-size: 1.2rem;
+    margin-left: 97px;
+    margin-top: -112px;
+  }
+
+}
